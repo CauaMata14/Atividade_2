@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Preencha o Formulário</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label>Nome: <input type="text" name="nome" required></label><br>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Idade: <input type="number" name="idade" required></label><br>
+                <label>Telefone: <input type="tel" name="telefone" required></label><br>
+                <label>Endereço: <input type="text" name="endereco" required></label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+                <label><input type="radio" name="cor" value="azul"> Azul</label>
+                <label><input type="radio" name="cor" value="vermelho"> Vermelho</label>
+                <label><input type="radio" name="cor" value="verde"> Verde</label>
+                <label><input type="radio" name="cor" value="amarelo"> Amarelo</label>
+                <label><input type="radio" name="cor" value="roxo"> Roxo</label><br>
+                
+                <label><input type="checkbox" name="hobby" value="leitura"> Leitura</label>
+                <label><input type="checkbox" name="hobby" value="esporte"> Esporte</label>
+                <label><input type="checkbox" name="hobby" value="musica"> Música</label>
+                <label><input type="checkbox" name="hobby" value="cozinha"> Cozinhar</label>
+                <label><input type="checkbox" name="hobby" value="viagem"> Viajar</label>
+                <label><input type="checkbox" name="hobby" value="filmes"> Assistir Filmes</label>
+                <label><input type="checkbox" name="hobby" value="fotografia"> Fotografia</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentários</legend>
+                <label>Mensagem: <textarea name="mensagem" rows="4" required></textarea></label><br>
+                <label>Feedback sobre o site: <textarea name="feedback" rows="4"></textarea></label>
+            </fieldset>
+            
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
